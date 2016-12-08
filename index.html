@@ -1,0 +1,163 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+    body {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    
+    h1 {
+        font-family: Lobster;
+    }
+    
+    h2 {
+        color: blue;
+        font-size: 16px;
+        font-family: monospace, cursive;
+    }
+    
+    .green {
+        color: green;
+    }
+    
+    .smaller-image {
+        width: 150px;
+        height: 100px;
+        border-color: mediumpurple;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 50px
+    }
+    
+    #cursive {
+        font-family: cursive;
+    }
+    
+    .interjected-text {
+        margin-bottom: -25px;
+        text-align: center;
+    }
+    
+    .box {
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        text-align: center;
+    }
+    
+    .yellow-box {
+        background-color: yellow;
+        padding: 10px;
+    }
+    
+    .red-box {
+        background-color: red;
+        padding: 20px;
+        margin: 40px;
+    }
+    
+    .green-box {
+        background-color: green;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .green-box-2 {
+        background-color: green;
+        padding: 20px;
+        margin: 20px;
+        padding-top: 50px;
+        padding-right: 50px;
+    }
+</style>
+<p>body element has <i>margin-left</i> and <i>margin-right</i> of 12 px</p>
+<h1 style="color:red">h1 element style="color:red" h1 {font-family: Lobster;}</h1>
+<h2>h2 element h2 {color: blue; font-size: 16px; font-family: monospace, cursive;}</h2>
+<p class="green">p element .green {color:green;}</p>
+<p>below is img element, .smaller-image {width: 150px; height: 100px; border-color: mediumpurple; border-width: 5px; border-style: solid; border-radius: 50px;} the image element is also a link, nested within an a element, to dogster.com</p>
+<a href="www.dogster.com"><img class="smaller-image" src="http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg" alt="dog listening to some beats"></a>
+<p>a p element surrounding an anchor element which is this link to <a href="google.com">google.com</a></p>
+<ul>Unordered list element
+    <li>random list element</li>
+    <li>random list element</li>
+    <li>random list element</li>
+</ul>
+<ol>Ordered list element
+    <li>list element 1</li>
+    <li>list element 2</li>
+    <li>list element 3</li>
+</ol>
+<p>below is an input element, required (which means that the user must put text in it) placeholder="text field", surrounded by a form element, which can submit data to a server using nothing more than pure each HTML</p>
+<form action="/submit-photos"><input required type="text" placeholder="text-field"></form>
+<p>below is a button form, type="submit"</p>
+<button type="submit">submit</button>
+<p>below are input elements, input type="radio (button)," name="buttons-one-and-two" nested within label elements. One button is checked</p>
+<label>
+    <input type="radio" name="buttons-one-and-two">radio button one</label>
+<label>
+    <input type="radio" name="buttons-one-and-two" checked>radio button two</label>
+<p>below are input elements, input type="checkbox," name="buttons-three-and-four" nested within label elements</p>
+<label>
+    <input type="checkbox" name="buttons-three-and-four">checkbox 1</label>
+<label>
+    <input type="checkbox" name="buttons-three-and-four">checkbox 2</label>
+<div style="background-color:orange;">
+    <p id="cursive">This p element is inside a div, with style="background-color:orange;." It's id is #cursive</p>
+</div>
+<p>The following is a more rudimentary primer on the nuances of padding, margins, and borders. Div elements nested within each other, along with h5 elements. The surrounding div element is used to house the other elements.</p>
+<p>From the FCC Section "Adjust the Margin of an Element": An element's <i>margin</i> controls the amount of space between an element's <i>border</i> and surrounding elements. Here, we can see that the green box and the red box are nested within the yellow
+    box. Note that the red box has more <i>margin</i> than the green box, making it appear smaller. When you increase a box's <i>margin</i>, it will increase the distance between its border and surrounding elements.</p>
+<div style="border-width:.5px;border-color:black;border-style:solid;">
+
+    <div class="box yellow-box">
+        <h5 class="injected-text">Margin</h5>
+        <h5 class="box red-box">Padding</h5>
+        <h5 class="box green-box">Padding</h5>
+    </div>
+</div>
+<p>From the FCC Section "Add Different Padding to Each Side of an Element": Sometimes you will want to customize an element so that it has different <i>padding</i> on each of its sides. CSS allows you to control the <i>padding</i> of an element on all four
+    sides with <i>padding-top</i>, <i>padding-right</i>, <i>padding-bottom</i>, and <i>padding-left</i> properties. The green box has {padding-top: 50px; padding-right: 50px;}.</p>
+
+<div style="border-width:.5px;border-color:black;border-style:solid;">
+
+    <div class="box yellow-box">
+        <h5 class="injected-text">Margin</h5>
+        <h5 class="box red-box">Padding</h5>
+        <h5 class="box green-box-2">Padding</h5>
+    </div>
+</div>
+<br>
+<div style="border-color: black; border-style: solid; border-width: 1px;">
+    <p>How Style is prioritized:</p>
+    <ol>
+        <li><i>!important</i> is the most powerful overider</li>
+        <li><i>in-line styles</i> are the second</li>
+        <li><i>id declarations</i> are the thrid</li>
+        <li><i>classes</i> are the fourth</li>
+        <li>styling in HTML or CSS is the fifth</li>
+    </ol>
+</div>
+<br>
+<div style="border-color: black; border-style: solid; border-width: 1px;">
+    <p>Using Hexadecimals for colors:</p>
+    <ul>
+        <li style="color: #000000;">black #000000</li>
+        <li style="color: #FF0000;">red #FF0000</li>
+        <li style="color: #00FF00;">green #00FF00</li>
+        <li style="color: #0FF;">cyan #0FF</li>
+        <li style="color: #F0F;">fuchsia #F0F</li>
+    </ul>
+    <p>Using RGB values for colors:</p>
+    <ul>
+        <li style="color: rgb(0, 0, 0);">black rgb(0,0,0)</li>
+        <li style="color: rgb(225, 0, 0);">red rgb(225, 0, 0)</li>
+        <li style="color: rgb(0, 0, 225);">blue rgb(0, 0, 225)</li>
+        <li style="color: rgb(218, 112, 214);">orchid rgb(218, 112, 214)</li>
+        <li style="color: rgb(160, 82, 45);">sienna rgb(160, 82, 45)</li>
+    </ul>
+</div>
+<br>
+<div>
+    <p><i>Spans</i> can be used to create inline elements. Inline elements just fill up the space they take up "naturally". However, block-level elements take up the entire screen. The <i>span</i> element can be used to put several elements together and
+        style them differently. This sentence has a <i>span</i> element in it, as follows: <span class="green">span class="green"</span></p>
+</div>
